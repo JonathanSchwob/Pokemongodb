@@ -16,7 +16,7 @@ app.get('/api/pokemon', function(req, res) {
     } else {
       res.send(doc);
     }
-  });
+  }).sort({'id': 1})
 });
 
 
